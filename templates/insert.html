@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        Developer Similarities    </title>
+    <!-- Favicon -->
+
+    <link href="{{ url_for('static', filename='img/brand/favicon.png') }}" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+
+    <link href="{{ url_for('static', filename='js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="{{ url_for('static', filename='css/argon-dashboard.css') }}" rel="stylesheet" />
+</head>
+
+<body class="">
+
+    <div class="main-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="{{url_for('index')}}">
+                    DEVELOPER SIMILARITIES
+                </a>
+                <!-- Form -->
+
+                <!-- User -->
+
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <!-- Header -->
+        <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+            <div class="container-fluid">
+                <div class="header-body">
+                    <!-- Card stats -->
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt--7">
+            <!-- Form -->
+            <div class="row">
+
+                <div class="col-xl-12 order-xl-1">
+
+                    <div class="card bg-secondary shadow">
+
+                        <div class="card-header bg-white border-0">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h3 class="mb-0">Insert data</h3>
+                                </div>
+                                <div class="col-4 text-right">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <form method="post" action="/insert">
+
+                                <!-- Developer Details -->
+                                <h6 class="heading-small text-muted mb-4">URL</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-address"></label>
+                                                <input id="url" name="url" class="form-control form-control-alternative" placeholder="Enter LinkedIn URL of Dev" value="" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <h6 class="heading-small text-muted mb-4">LinkedIn content</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-address"></label>
+                                                <input id="linkedin" name="linkedin" class="form-control form-control-alternative" placeholder="LinkedIn content of Dev" value="" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <h6 class="heading-small text-muted mb-4">Public Coding Activities</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-address"></label>
+                                                <input id="public_coding" name="public_coding" class="form-control form-control-alternative" placeholder="Public Coding Activities of Dev" value="" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <h6 class="heading-small text-muted mb-4">Github Analysis</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-address"></label>
+                                                <input id="github_analysis" name="github_analysis" class="form-control form-control-alternative" placeholder="Github Analysis of Dev" value="" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <h6 class="heading-small text-muted mb-4">Stackoverflow Analysis</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-address"></label>
+                                                <input id="stack_overflow" name="stack_overflow" class="form-control form-control-alternative" placeholder="Stackoverflow Analysis of Dev" value="" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <h6 class="heading-small text-muted mb-4">Tech keys involved</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-address"></label>
+                                                <input id="tech_keys" name="tech_keys" class="form-control form-control-alternative" placeholder="Tech keys from the Dev" value="" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <hr class="my-4" />
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary my-4">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--<br><br> {% if result %}-->
+            <!-- Table -->
+            <!--<div class="row">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="card-header border-0">
+                            <h3 class="mb-0">Card tables</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table align-items-center table-flush">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col">Sample dev</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    {% for item in result.sample_dev %}
+                                    <tr>
+                                        <td>
+                                            {{item}}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                    
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="media align-items-center">
+                                                <a href="#" class="avatar rounded-circle mr-3">
+                                                    <img alt="Image placeholder" src="../static/img/theme/craigslist.png">
+                                                </a>
+                                                <div class="media-body">
+                                                    <span class="mb-0 text-sm">Col</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            Col
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-dot mr-4">
+                                                        <i class="bg-warning"></i> Col
+                                                    </span>
+                                        </td>
+                                        <td>
+                                            <div class="avatar-group">
+                                                Col
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span class="mr-2"> </span>
+                                                <a href="/download/" download>download</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% endif %}-->
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="row align-items-center justify-content-xl-between">
+                    <div class="col-xl-6">
+                        <div class="copyright text-center text-xl-left text-muted">
+                            &copy; 2020 <a href="#" class="font-weight-bold ml-1" target="_blank">
+                                DEVELOPER SIMILARITIES
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--   Core   -->
+    <script src="{{ url_for('static', filename='js/plugins/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <!--   Optional JS   -->
+    <!--   Argon JS   -->
+    <script src="{{ url_for('static', filename='js/argon-dashboard.min.js') }}"></script>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+        window.TrackJS &&
+            TrackJS.install({
+                token: "ee6fab19c5a04ac1a32a645abde4613a",
+                application: "argon-dashboard-free"
+            });
+    </script>
+    <!-- Hello                    -->
+</body>
+
+</html>
